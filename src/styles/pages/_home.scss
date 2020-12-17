@@ -1,0 +1,442 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.onepager_site {
+  .holder {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    padding: 3vh;
+
+    .sidebar {
+      width: 15vw;
+      height: 100%;
+      overflow-y: scroll;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+      transition: all 0.2s ease-in-out;
+
+      &::-webkit-scrollbar {
+        display: none; /* Chrome */
+      }
+
+      &.collapsed {
+        width: 0;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .sidebar-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .item-group {
+
+          .logo-holder {
+            padding: 0 1.7vw 1.7vw .5vw;
+          }
+
+          .nav {
+            .nav-link {
+              display: flex;
+              align-items: center;
+              padding: 0.5vw 0.5vw;
+              margin-bottom: 0.3vw;
+              color: #000;
+              font-size: 1vw;
+              border-radius: 0;
+
+              svg {
+                width: 2.3vw;
+                margin-left: 8px;
+                margin-right: 20px;
+                
+                .svg_bg {
+                  fill: #fff;
+                  transition: all .2s ease-in-out;
+                }
+                .icon {
+                  fill: #000;
+                  transition: all .2s ease-in-out;
+                }
+              }
+
+              &.active {
+                color: #fff;
+                background-color: #000;
+                
+                svg {
+                  width: 2.3vw;
+                  .svg_bg {
+                    fill: #000;
+                    transition: all .2s ease-in-out;
+                  }
+                  .icon {
+                    fill: #fff;
+                    transition: all .2s ease-in-out;
+                  }
+                }
+
+              }
+            }
+          }
+        }
+      }
+
+      .info {
+        background-color: #f6f6f6;
+        margin: 1.7vw 1.7vw 0 .5vw;
+        padding: 1vw;
+
+        p {
+          font-size: 0.9vw;
+          margin-bottom: 0;
+          line-height: 1.3vw;
+        }
+      }
+    }
+  
+    .viewer {
+      position: relative;
+      width: 85vw;
+      transition: all 0.2s ease-in-out;
+      background: #000;
+
+      .hamburger {
+        z-index: 100;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 2.5vw;
+        height: 2.5vw;
+        background-color: #000;
+        transition: all 0.2s ease-in-out;
+        
+        cursor: pointer;
+  
+        &.slide {
+          left: auto;
+          transition: all 0.2s ease-in-out;
+          transform: scaleX(-1);
+        }
+      }
+
+      &.full {
+        width: 100vw;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      .tab-content {
+        height: 100%;
+        border-color: #000;
+        border-width: 0.6vw;
+        border-style: solid;
+
+        .tab-pane {
+          margin:0px;
+          padding:0px;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .holder {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 100vh;
+      padding: 15px;
+
+      .sidebar {
+        width: 23%;
+        height: 100%;
+
+        .sidebar-content {
+
+          .item-group {
+            .logo-holder {
+              padding: 0 1.7vw 1.7vw .5vw;
+            }
+
+            .nav {
+              .nav-link {
+                display: flex;
+                align-items: center;
+                padding: 12px 5px;
+                margin-bottom: 5px;
+                color: #000;
+                font-size: 18px;
+                border-radius: 0;
+
+                svg {
+                  width: 40px;
+                  margin-left: 8px;
+                  margin-right: 20px;
+                  
+                  .svg_bg {
+                    fill: #fff;
+                    transition: all .2s ease-in-out;
+                  }
+                  .icon {
+                    fill: #000;
+                    transition: all .2s ease-in-out;
+                  }
+                }
+
+                &.active {
+                  color: #fff;
+                  background-color: #000;
+                  
+                  svg {
+                    width: 40px;
+                    .svg_bg {
+                      fill: #000;
+                      transition: all .2s ease-in-out;
+                    }
+                    .icon {
+                      fill: #fff;
+                      transition: all .2s ease-in-out;
+                    }
+                  }
+
+                }
+              }
+            }
+          }
+        }
+
+        .info {
+          background-color: #f6f6f6;
+          margin: 1.7vw 1.7vw 0 .5vw;
+          padding: 1vw;
+
+          p {
+            font-size: 14px;
+            margin-bottom: 0;
+            line-height: 22px;
+          }
+        }
+      }
+    
+      .viewer {
+        position: relative;
+        width: 77%;
+
+        .hamburger {
+          z-index: 100;
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          width: 35px;
+          height: 35px;
+          background-color: #000;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+    
+          &.slide {
+            left: auto;
+            transition: all 0.2s ease-in-out;
+            transform: scaleX(-1);
+          }
+        }
+
+        .tab-content {
+          height: 100%;
+          border-color: #000;
+          border-width: 8px;
+          border-style: solid;
+
+          .tab-pane {
+            margin:0px;
+            padding:0px;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 991px) {
+    .holder {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 100vh;
+      padding: 15px;
+
+      .sidebar {
+        width: 23%;
+        height: 100%;
+
+
+        .sidebar-content {
+
+          .item-group {
+            .logo-holder {
+              padding: 0 20px 20px .5vw;
+            }
+
+            .nav {
+              .nav-link {
+                display: flex;
+                align-items: center;
+                padding: 12px 5px;
+                margin-bottom: 5px;
+                color: #000;
+                font-size: 14px;
+                border-radius: 0;
+
+                svg {
+                  width: 32px;
+                  margin-left: 4px;
+                  margin-right: 8px;
+                  
+                  .svg_bg {
+                    fill: #fff;
+                    transition: all .2s ease-in-out;
+                  }
+                  .icon {
+                    fill: #000;
+                    transition: all .2s ease-in-out;
+                  }
+                }
+
+                &.active {
+                  color: #fff;
+                  background-color: #000;
+                  
+                  svg {
+                    width: 32px;
+                    .svg_bg {
+                      fill: #000;
+                      transition: all .2s ease-in-out;
+                    }
+                    .icon {
+                      fill: #fff;
+                      transition: all .2s ease-in-out;
+                    }
+                  }
+
+                }
+              }
+            }
+          }
+        }
+
+        .info {
+          display: none;
+
+          p {
+            font-size: 14px;
+            margin-bottom: 0;
+            line-height: 22px;
+          }
+        }
+      }
+    
+      .viewer {
+        position: relative;
+        width: 77%;
+
+        .hamburger {
+          z-index: 100;
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          width: 35px;
+          height: 35px;
+          background-color: #000;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+    
+          &.slide {
+            left: auto;
+            transition: all 0.2s ease-in-out;
+            transform: scaleX(-1);
+          }
+        }
+
+        .tab-content {
+          height: 100%;
+          border-color: #000;
+          border-width: 8px;
+          border-style: solid;
+
+          .tab-pane {
+            margin:0px;
+            padding:0px;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .holder {
+      position: relative;
+      padding: 15px;
+
+      .sidebar {
+        position: fixed;
+        left: -190px;
+        width: 190px;
+        height: 100%;
+        background-color: #fff;
+        transition: all 0.2s ease-in-out;
+        z-index: 10;
+
+        .sidebar-content {
+          width: 190px;
+          padding-bottom: 30px;
+        }
+
+        &.collapsed {
+          left: 0;
+          width: 190px;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+
+      .viewer {
+        width: 100%;
+
+        .hamburger {
+          z-index: 100;
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          width: 35px;
+          height: 35px;
+          background-color: #000;
+          transition: all 0.2s ease-in-out;
+          transform: scaleX(-1);
+          cursor: pointer;
+    
+          &.slide {
+            left: 170px;
+            transition: all 0.2s ease-in-out;
+            transform: scaleX(1);
+          }
+        }
+
+        .tab-content {
+          border-color: #000;
+          border-width: 8px;
+          border-style: solid;
+        }
+      }
+    }
+  }
+}
