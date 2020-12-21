@@ -3,10 +3,10 @@
 const gulp = require('gulp');
 
 const path = {
-   baseUrl: process.env.PWD,
-  //baseUrl: '..',
-   src: process.env.PWD + '/src/',
-   dist: process.env.PWD + '/dist/',
+  // baseUrl: process.env.PWD,
+  baseUrl: '..',
+  // src: process.env.PWD + '/src/',
+  // dist: process.env.PWD + '/dist/',
   src: '../src/',
   dist: '../dist/',
 
@@ -17,8 +17,8 @@ const path = {
 
   sources: {
     sass: [
-       process.env.PWD + '/src/styles/main.scss'
-      //'../src/styles/main.scss',
+      // process.env.PWD + '/src/styles/main.scss'
+      '../src/styles/main.scss',
     ],
   },
 };

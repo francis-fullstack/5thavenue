@@ -1,1 +1,1 @@
-web: ./tasks/index.js
+web: ./tasks/serve.js
