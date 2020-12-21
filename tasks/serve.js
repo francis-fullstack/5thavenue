@@ -13,7 +13,7 @@ module.exports = (gulp, path) => {
     browserSync.init({
       notify: false,
       server: path.src,
-      port: 3000,
+      port: process.env.port || 3000,
     });
 
     gulp
