@@ -3,12 +3,12 @@
 const gulp = require('gulp');
 
 const path = {
-  // baseUrl: process.env.PWD,
-  baseUrl: '..',
-  // src: process.env.PWD + '/src/',
-  // dist: process.env.PWD + '/dist/',
-  src: '../src/',
-  dist: '../dist/',
+   baseUrl: process.env.PWD,
+  //baseUrl: '..',
+   src: process.env.PWD + '/src/',
+   dist: process.env.PWD + '/dist/',
+  //src: '../src/',
+  //dist: '../dist/',
 
   sass: {
     outputStyle: 'compressed',
