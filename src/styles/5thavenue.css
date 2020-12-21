@@ -90,3 +90,30 @@ a{
 	background-color: #000000;
 	border: 2px solid #555555;
 }
+@media only screen and (max-width: 600px) {
+    #floater #submenu{
+        font-size: 14px;
+    }
+
+    /* SUB MENU FOR STANDARD LED*/
+    .sub-item-sl{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    /* SUB MENU FOR SEMI TRANSPARENT*/
+    .sub-item-st{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    /* SUB MENU FOR LAYOUT 1*/
+    .sub-item-layout1{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+
+    /* SUB MENU FOR LAYOUT 2*/
+    .sub-item-layout2{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+}

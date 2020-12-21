@@ -1,0 +1,119 @@
+a{
+    text-decoration: none !important;
+}
+
+#floater{
+    width: 100%;
+  
+}
+#floater #submenu{
+    width: 90%;
+    color: #fff !important;
+    float: right !important;
+    background-color: rgb(41, 39, 39);
+    padding: 15px;
+}
+#floater-submenu{
+    width: 90%;
+}
+
+/* SUB MENU FOR STANDARD LED*/
+.sub-item-sl{
+    width: 90%;
+    text-decoration: none;
+    color: #000;
+    margin-left: 60px;
+    padding-left: 15px;
+    border-left: 1px solid black;  
+    font-weight: normal;
+}
+/* SUB MENU FOR SEMI TRANSPARENT*/
+.sub-item-st{
+    width: 90%;
+    text-decoration: none;
+    color: #000;
+    margin-left: 60px;
+    padding-left: 15px;
+    border-left: 1px solid black;  
+}
+
+/* SUB MENU FOR LAYOUT 1*/
+.sub-item-layout1{
+    width: 90%;
+    text-decoration: none;
+    color: #000;
+    margin-left: 60px;
+    padding-left: 15px;
+    border-left: 1px solid black;  
+}
+
+/* SUB MENU FOR LAYOUT 2*/
+.sub-item-layout2{
+    width: 90%;
+    text-decoration: none;
+    color: #000;
+    margin-left: 60px;
+    padding-left: 15px;
+    border-left: 1px solid black;  
+}
+.makeItBold{
+    font-weight: bold;
+}
+.nav-pills .nav-link {
+    background-color: rgb(0, 0, 0) !important;
+    color: #fff !important;
+    margin-bottom: 0 !important;
+    padding: 20px !important;
+}
+
+.holder > #side_bar > .sidebar-content{
+    overflow-y:auto !important;
+    overflow-x: hidden  !important;
+}
+
+
+/* SCROLLBAR DESIGN */
+.sidebar-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.sidebar-content::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+@media only screen and (max-width: 600px) {
+    #floater #submenu{
+        font-size: 14px;
+    }
+
+    /* SUB MENU FOR STANDARD LED*/
+    .sub-item-sl{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    /* SUB MENU FOR SEMI TRANSPARENT*/
+    .sub-item-st{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    /* SUB MENU FOR LAYOUT 1*/
+    .sub-item-layout1{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+
+    /* SUB MENU FOR LAYOUT 2*/
+    .sub-item-layout2{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+}

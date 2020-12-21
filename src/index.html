@@ -15,7 +15,7 @@
   <link rel="icon" href="./assets/images/JohnLewis_Logo.ico">
   <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
   <link rel="stylesheet" type="text/css" href="./styles/main.min.css">
-  <link rel="stylesheet" type="text/css" href="./styles/modifications.css">
+  <link rel="stylesheet" type="text/css" href="./styles/splash.css">
   <!--[if lte IE 9]>
     <link href="stylesheets/non-responsive.css" rel="stylesheet" />
   <![endif]-->
@@ -27,187 +27,48 @@
   <![endif]-->
 </head>
 
-<body class="bodyClass">
-  <!--[if lt IE 9]>
-    <div id="browser-notification" class="alert alert-danger">
-      <div class="container">
-        We are sorry but it looks like your <a href="http://www.whatbrowser.org/intl/en_us/" target=_blank>browser</a> doesn't support our website features. In order to get the full experience please download a new version of <a title="Download Chrome" href="http://www.google.com/chrome/" target=_blank>Chrome</a>, <a title="Download Safari" href="http://www.apple.com/safari/download/" target=_blank>Safari</a>, <a title="Download Firefox" href="http://www.mozilla.com/firefox/" target=_blank>Firefox</a>, or <a title="Download Internet Explorer" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target=_blank>Internet Explorer</a>.
-      </div>
-    </div>
-  <![endif]-->
-
-  <main class="onepager_site">
-    <div class="holder">
-
-      <div id="side_bar" class="sidebar">
-        <div class="sidebar-content">
-
-          <div class="item-group">
-            <div class="logo-holder">
-              <img src="./assets/images/adidas_logo.jpg" class="img-fluid">
-            </div>
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-              <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                <!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" height="100%" width="100%">
-                  <rect width="1000" height="1000" class="svg_bg"/>
-                  <path class="icon" d="M748.62,609.82a9,9,0,0,0-9.84,2L640,710.52A9,9,0,0,0,646.42,726h98.75a9,9,0,0,0,9-9V618.17A9,9,0,0,0,748.62,609.82Zm-80.39,98.06,67.9-67.9v67.9Z"/>
-                  <path class="icon" d="M800.94,464a9,9,0,0,0-9.84,2L764,493V309a9,9,0,0,0-9-9H685.57l25.2-25.2,0,0,24.28-24.28a27.55,27.55,0,0,0,0-39L707,183.44a27.55,27.55,0,0,0-39,0l-24.3,24.29-29.36,29.36L551.49,300H271V210.59a9,9,0,0,0-9-9,71.15,71.15,0,0,0-71.06,71.07V656.39a8.81,8.81,0,0,0,.21,1.94,68.42,68.42,0,0,0,68.23,63.24H535.47l-52,52A9,9,0,0,0,489.86,789H797.48a9,9,0,0,0,9-9V472.34A9,9,0,0,0,800.94,464ZM680.81,196.22a9.48,9.48,0,0,1,13.4,0l28.08,28.08a9.49,9.49,0,0,1,0,13.41l-17.9,17.9L662.9,214.12ZM650.12,226.9l41.49,41.49L675,285l-41.49-41.49Zm138.33,347H771.78a9,9,0,0,0,0,18.07h16.67v27.23H771.78a9,9,0,0,0,0,18.07h16.67v27.23H771.78a9,9,0,0,0,0,18.07h16.67v27.23H771.78a9,9,0,0,0,0,18.07h16.67v43.09H511.67l91.27-91.26a9,9,0,0,0,0-12.78,8.69,8.69,0,0,0-1.3-1.07,9,9,0,0,0-11.48,1.07l-36.62,36.62H259.36A50.09,50.09,0,0,1,209,654.76c.05-1.72.19-3.42.4-5.11v0c.1-.79.23-1.59.36-2.38a2.56,2.56,0,0,0,.05-.27c.13-.71.27-1.41.43-2.11,0-.19.08-.39.13-.58.14-.59.29-1.18.44-1.77l.27-1c.14-.45.27-.91.42-1.37s.3-.9.46-1.35.21-.62.33-.94c.22-.59.46-1.17.7-1.75.06-.17.13-.34.2-.51.31-.72.63-1.43,1-2.14a.36.36,0,0,0,0-.09,53.2,53.2,0,0,1,37-28.91l.13,0c.75-.15,1.51-.28,2.27-.4L254,604c.68-.1,1.38-.19,2.07-.26a5.93,5.93,0,0,1,.59-.07c.66-.07,1.34-.12,2-.16l.64,0c.88,0,1.78-.06,2.67-.06a9,9,0,0,0,9-9V528.85a9,9,0,1,0-18.07,0v57a70.61,70.61,0,0,0-40.59,19.64c-1.18,1.15-2.29,2.34-3.37,3.56V272.62a53.09,53.09,0,0,1,43.95-52.23V492.7h0a9,9,0,0,0,18.08,0h0V318.05h262.4L483.47,368a9,9,0,0,0,12.77,12.78l65.38-65.38h0l59.13-59.14,41.49,41.49-4.87,4.86h0L475.18,484.82l-41.49-41.49,35.91-35.91a9,9,0,1,0-12.77-12.78l-42.31,42.3c-.22.23-.43.47-.63.71a2.48,2.48,0,0,0-.19.26l-.37.51-.19.32c-.1.17-.19.34-.28.51s-.11.23-.16.35-.16.36-.23.54l-.07.18-17.61,49.87-12,34a9.66,9.66,0,0,0-.36,1.38H352.38a9,9,0,0,0,0,18.07H602.61a9,9,0,0,0,0-18.07H423.08l55.11-19.45.13-.06.63-.26.25-.12c.22-.11.43-.23.64-.35l.2-.12c.22-.14.43-.3.64-.46l.15-.11a7.6,7.6,0,0,0,.74-.66L667.5,318.05H746v193L616.71,640.33a9,9,0,0,0,0,12.78,8,8,0,0,0,.69.62,9,9,0,0,0,11.41,0c.23-.19.46-.4.68-.62h0l159-159Zm-329.8-80L432.77,503l-17.24-17.24,9.13-25.88Z"/>
-                </svg> -->
-                Screen Technology
-              </a>
-
-                <!-- Nested MENU -->
-                <div id="floater">
-                  <a id="submenu" href="#" class="section1">Standard LED <span style="float: right !important; margin-right: 20px"> <i class="fas fa-caret-right"></i></span></a>
-                </div>
-
-                    <!-- MENU ITEMS -->
-                    <div class="set-margin-sl" style="margin-top: 10px !important;"></div>
-                    <a class="sub-item-sl highlight" id="v-pills-st-sub1-tab" data-toggle="pill" href="#v-pills-st-sub1" role="tab" aria-controls="v-pills-st-sub1" aria-selected="true"> Day time lighting</a>
-                    <a class="sub-item-sl highlight" id="v-pills-st-sub2-tab" data-toggle="pill" href="#v-pills-st-sub2" role="tab" aria-controls="v-pills-st-sub2" aria-selected="true"> Night time lighting</a>
-                    <div class="set-margin-sl" style="margin-top: 10px !important;"></div>
-                     
-
-                 <!-- Nested MENU -->
-                <div id="floater">
-                  <a id="submenu" href="#" class="section2">Semi transparents <span style="float: right !important; margin-right: 20px"> <i class="fas fa-caret-right"></i></span></a>
-                </div>
-
-                <div class="set-margin-st" style="margin-top: 10px !important;"></div>
-                <a class="sub-item-st highlight" id="v-pills-st-sub1-tab" data-toggle="pill" href="#v-pills-st-sub1" role="tab" aria-controls="v-pills-st-sub1" aria-selected="true"> Day time lighting</a>
-                <a class="sub-item-st highlight" id="v-pills-st-sub2-tab" data-toggle="pill" href="#v-pills-st-sub2" role="tab" aria-controls="v-pills-st-sub2" aria-selected="true"> Night time lighting</a>
-               
-              <br>
-             <a class="nav-link" id="v-pills-beauty-tab" data-toggle="pill" href="#v-pills-beauty" role="tab" aria-controls="v-pills-beauty" aria-selected="false">
-                <!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
-                  <rect width="1000" height="1000" class="svg_bg"/>
-                  <path class="icon" d="M730.07,422.09a91.61,91.61,0,0,0-28.75-18.86,200.45,200.45,0,0,0-56.48-110c-78.75-78.75-206.89-78.75-285.64,0a201.53,201.53,0,0,0-52,89.56,30.07,30.07,0,0,0-31.12,30v78.92a20,20,0,0,0-12,18.32v44.1a20,20,0,0,0-18,19.89V716a30,30,0,0,0,30,30h92a30,30,0,0,0,30-30V609.29a199.47,199.47,0,0,0,74,26.56V686H467.2A50.11,50.11,0,0,0,417.14,736a10,10,0,0,0,10,10H576.91a10,10,0,0,0,10-10A50.11,50.11,0,0,0,536.85,686H532V635.84a199.45,199.45,0,0,0,78.31-29.22v99.91A39.55,39.55,0,0,0,649.83,746h29.5a39.55,39.55,0,0,0,39.5-39.51V588.76l29.73-60.32A91.33,91.33,0,0,0,730.07,422.09Zm-434-9.27A10,10,0,0,1,310.77,404l32,17.15A10,10,0,0,1,348,430v60.1h-52Zm-12,97.24h76v44h-76Zm94,206a10,10,0,0,1-10,10h-92a10,10,0,0,1-10-10v-142H378V716ZM536.85,706A30.11,30.11,0,0,1,565.2,726H438.85A30.11,30.11,0,0,1,467.2,706h69.65ZM492,686V637.8c3.29.16,6.6.25,9.93.25l2.74,0c2.45,0,4.89-.12,7.32-.23V686ZM398,585.44V574.05a20,20,0,0,0-18-19.89v-44.1a20,20,0,0,0-12-18.32V430a30,30,0,0,0-15.83-26.44l-26.13-14a181.48,181.48,0,0,1,47.27-82.13c70.95-70.95,186.4-70.95,257.35,0a180.53,180.53,0,0,1,49.16,89.93,92.8,92.8,0,0,0-13.48-1,91.6,91.6,0,0,0-15.22,1.29,154,154,0,0,0-281.25-40.69,10,10,0,0,0,17.15,10.29A133.82,133.82,0,0,1,539.2,307.38l-73.79,73.79a10,10,0,0,0,14.14,14.14l80.11-80.11A135.06,135.06,0,0,1,594.29,339L465.81,467.52A10,10,0,1,0,480,481.66L607.76,353.85A132.81,132.81,0,0,1,631.91,403a91.25,91.25,0,0,0-29.21,19.06l-1.14,1.1a91.71,91.71,0,0,0-19.49,104.24l5.45,11.81a134,134,0,0,1-158.09,9.46,10,10,0,1,0-10.85,16.8,154,154,0,0,0,177.57-7.57l12,26C546.21,628.44,460.7,629.16,398,585.44ZM698.83,706.53A19.53,19.53,0,0,1,679.33,726h-29.5a19.53,19.53,0,0,1-19.51-19.51V643.91h68.51v62.62Zm0-82.62H630.32V596.25h68.51ZM730.62,519.6,702.7,576.25h-5.13V535.19a10,10,0,0,0-20,0v41.06h-51l-26.39-57.2a71.68,71.68,0,0,1,15.24-81.49l1.13-1.1a71.61,71.61,0,0,1,114,83.14Z"/>
-                </svg>     -->          
-                Layout Option
-              </a>
-              
-               <!-- Nested MENU -->
-               <div id="floater">
-                <a id="submenu" href="#" class="section3">Layout 1<span style="float: right !important; margin-right: 20px"> <i class="fas fa-caret-right"></i></span></a>
-              </div>
-
-                  <!-- MENU ITEMS -->
-                  <div class="set-margin-layout1" style="margin-top: 10px !important;"></div>
-                  <a class="sub-item-layout1 highlight" id="v-pills-st-sub1-tab" data-toggle="pill" href="#v-pills-st-sub1" role="tab" aria-controls="v-pills-st-sub1" aria-selected="true">View 1</a>
-                  <a class="sub-item-layout1 highlight" id="v-pills-st-sub2-tab" data-toggle="pill" href="#v-pills-st-sub2" role="tab" aria-controls="v-pills-st-sub2" aria-selected="true">View 2</a>
-                  <a class="sub-item-layout1 highlight" id="v-pills-st-sub1-tab" data-toggle="pill" href="#v-pills-st-sub1" role="tab" aria-controls="v-pills-st-sub1" aria-selected="true">View 3</a>
-                  <a class="sub-item-layout1 highlight" id="v-pills-st-sub2-tab" data-toggle="pill" href="#v-pills-st-sub2" role="tab" aria-controls="v-pills-st-sub2" aria-selected="true">View 4</a>
-                  <div class="set-margin-layout1" style="margin-top: 10px !important;"></div>
-                   
-
-                   <!-- Nested MENU -->
-               <div id="floater">
-                <a id="submenu" href="#" class="section4">Layout 2<span style="float: right !important; margin-right: 20px"> <i class="fas fa-caret-right"></i></span></a>
-              </div>
-
-                  <!-- MENU ITEMS -->
-                  <div class="set-margin-layout2" style="margin-top: 10px !important;"></div>
-                  <a class="sub-item-layout2 highlight" id="v-pills-st-sub1-tab" data-toggle="pill" href="#v-pills-st-sub1" role="tab" aria-controls="v-pills-st-sub1" aria-selected="true">View 1</a>
-                  <a class="sub-item-layout2 highlight" id="v-pills-st-sub2-tab" data-toggle="pill" href="#v-pills-st-sub2" role="tab" aria-controls="v-pills-st-sub2" aria-selected="true">View 2</a>
-                  <a class="sub-item-layout2 highlight" id="v-pills-st-sub1-tab" data-toggle="pill" href="#v-pills-st-sub1" role="tab" aria-controls="v-pills-st-sub1" aria-selected="true">View 3</a>
-                  <a class="sub-item-layout2 highlight" id="v-pills-st-sub2-tab" data-toggle="pill" href="#v-pills-st-sub2" role="tab" aria-controls="v-pills-st-sub2" aria-selected="true">View 4</a>
-                  <div class="set-margin-layout2" style="margin-top: 10px !important;"></div>
-                   
-
-            </div>
-
-          </div>
-          <div class="info">
-            <p>This year we will complete the refurbishment and extension of John Lewis & Partners Edinburgh. It's been a lengthy project, but it will be worth the wait! We are so excited to reveal your new shop with the very latest concepts, new brands and experiences. These images show shopping experiences in our shops in Southampton and Cheltenham.</p>
-          </div>
+<body>
+  <!-- Navbar -->
+ 
+  <!--  <div class="wrapper container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-12">
+        <img class="img-responsive adidaslogo" style="width:30%" src="./assets/images/adidas-logo-white.png" alt="adidas_logo" >
+       </div>
+       <div class="col-sm-6 col-12"> 
+         <div class="div" style="float: right; color:white; font-size: 90px; font-weight: bold;">
+          <p1>2021 Evergreen <br> Display Concepts</p>
+         </div>
         </div>
-      </div>
-	  
-      <div class="viewer">
-        <div id="arrow" class="hamburger">
-          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
-            <rect width="100%" height="100%" fill="#000"/>
-            <g>
-              <path d="M16.91,25,9.43,17.5,16.91,10" fill="none" stroke="#fff"/>
-              <path d="M9.26,18.09V16.91H25.74v1.18Z" fill="#fff"/>
-            </g>
-          </svg>
+     </div>
+   </div> -->
+   <nav class="logos">
+      <div class="row">
+        <div class="col-sm-6 col-6">
+            <img class="img-responsive adidaslogo" src="./assets/images/adidas-logo-white.png" alt="adidas_logo" >
         </div>
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-            <iframe src="https://my.matterport.com/show/?m=FGyzHarGtqc&mls=1&qs=1&title=0&play=1" 
-                    style="border:none; transition: all 0.2s ease-in-out;" 
-                    width="100%" 
-                    height="100%" 
-                    title="World of Design"
-                    allow='xr-spatial-tracking'
-                    allowfullscreen
-              ></iframe>
-          </div>
-
-                    <!-- SUB MENU ITEM -->
-                    <div class="tab-pane fade" id="v-pills-st-sub1" role="tabpanel" aria-labelledby="v-pills-st-sub1-tab">
-                      <video width="100%" height="100%" autoplay controls muted>
-                        <source src="./assets/videos/vid1.mp4 " style="border:none;" type="video/mp4">
-                        <source src="./assets/videos/vid1.ogg" type="video/ogg">
-                      Your browser does not support the video tag.
-                      </video>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-st-sub2" role="tabpanel" aria-labelledby="v-pills-st-sub2-tab">
-                      <iframe src="https://my.matterport.com/show/?m=RzwMCFZyuPP&sr=-2.96,.87&ss=19&mls=1&qs=1&title=0&play=1" 
-                              style="border:none;" 
-                              width="100%" 
-                              height="100%" 
-                              title="Men's Fashion"
-                              allow='xr-spatial-tracking'
-                              allowfullscreen
-                      ></iframe>
-                    </div>
-
-          <div class="tab-pane fade" id="v-pills-beauty" role="tabpanel" aria-labelledby="v-pills-beauty-tab">
-            <iframe src="https://my.matterport.com/show/?m=yEchphsAYrm&mls=1&qs=1&title=0&play=1" 
-                    style="border:none;" 
-                    width="100%" 
-                    height="100%" 
-                    title="Beauty Society"
-                    allow='xr-spatial-tracking'
-                    allowfullscreen
-            ></iframe>
-          </div>
-          <div class="tab-pane fade" id="v-pills-studio" role="tabpanel" aria-labelledby="v-pills-studio-tab">
-            <iframe src="https://my.matterport.com/show/?m=8MbEiwEUqe8&sr=-.02,1.11&ss=132&mls=1&qs=1&title=0&play=1&hl=2" 
-                    style="border:none;" 
-                    width="100%" 
-                    height="100%" 
-                    title="Style Studio"
-                    allow='xr-spatial-tracking'
-                    allowfullscreen
-            ></iframe>
-          </div>
-          <div class="tab-pane fade" id="v-pills-exp" role="tabpanel" aria-labelledby="v-pills-exp-tab">
-            <iframe src="https://my.matterport.com/show/?m=RzwMCFZyuPP&sr=-2.96,.87&ss=19&mls=1&qs=1&title=0&play=1" 
-                    style="border:none;" 
-                    width="100%" 
-                    height="100%" 
-                    title="Men's Fashion"
-                    allow='xr-spatial-tracking'
-                    allowfullscreen
-            ></iframe>
-          </div>
-          <!-- <div class="tab-pane fade" id="v-pills-opticians" role="tabpanel" aria-labelledby="v-pills-opticians-tab">
-            <iframe src="" 
-                    style="border:none;" 
-                    width="100%" 
-                    height="100%" 
-                    title="Opticians"
-                    allow='xr-spatial-tracking'
-                    allowfullscreen
-            ></iframe>
-          </div> -->
-        </div>
+         <div class="col-sm-6 col-6">
+          <p class="title-logo">2021 Evergreen <br> Display Concepts</p>
+         </div>
       </div>
-    </div>
-  </main>
+  </nav>
+
+  <br><br><br><br>
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-12" >
+        <a href="/5th-avenue"><img class=" center" src="./assets/images/Placeholder_5thAve_Thumbnail.jpg" alt="5th Avenue"></a>
+        <a href="/5th-avenue"><p class="title-item">5th Ave</p></a>
+       </div>
+       <div class="col-sm-6 col-12"> 
+         <div class="div">
+        <a href="/adventura"><img class="center" src="./assets/images/Placeholder_Adventura_Thumbnail.jpg" alt="Adventura"></a>
+         </div>
+         <a href="/5th-avenue"><p class="title-item">Adventura</p></a>
+        </div>
+     </div>
+   </div>
+  
 
   <!-- build:js scripts/main.min.js -->
   <script src="./scripts/vendors/jquery.min.js"></script>
@@ -219,10 +80,6 @@
   <script src="./scripts/bootstrapper.js"></script>
   <!-- endbuild -->
 
-
-  <script>
-    
-  </script>
 
   <!--[if lte IE 9]>
     <script src="javascripts/non-responsive.js"></script>
