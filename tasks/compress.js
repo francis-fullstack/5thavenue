@@ -69,7 +69,9 @@ module.exports = (gulp, path) => {
   var files = [
     { src : `${path.src}*.html`, dest : `${path.dist}` },
     { src : `${path.src}/5th-avenue/*.html`, dest : `${path.dist}5th-avenue/` },
-    { src : `${path.src}/adventura/*.html`, dest : `${path.dist}adventura/` }
+    { src : `${path.src}/adventura/*.html`, dest : `${path.dist}adventura/` },
+    { src : `${path.src}assets/videos/5thave/**/*`, dest :`${path.dist}assets/videos/5thAve/` },
+    { src : `${path.src}assets/videos/Adventura/**/*`, dest : `${path.dist}assets/videos/Adventura/`  },
   ];
 
   gulp.task('build:useref', async function () {
