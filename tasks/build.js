@@ -38,13 +38,23 @@ const parallelTask = ['build:css', 'build:fonts'];
 
 require('./assets')(gulp, path);
 
-gulp.task('build:css', (done) => {
-  return gulp
-    .src(`${path.src}styles/main.min.css`)
-    .pipe(gulp.dest(`${path.dist}styles/`));
+var sheets = [
+  { src : `${path.src}styles/main.min.css`, dest : `${path.dist}styles/` },
+  { src : `${path.src}styles/splash.css`, dest : `${path.dist}styles/` },
+  { src : `${path.src}styles/adventura.css`, dest : `${path.dist}styles/` },
+  { src : `${path.src}styles/5thavenue.css`, dest : `${path.dist}styles/` }
+];
 
-  done();
+gulp.task('build:css', async function(done) {
+  await sheets.map(function(file) {
+    return gulp.src([
+        file.src 
+    ])
+    .pipe( gulp.dest(file.dest) )
+    }); 
+  
 });
+
 
 gulp.task('build:fonts', (done) => {
   return gulp
