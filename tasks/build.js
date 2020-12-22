@@ -4,12 +4,12 @@ const removehtml = require('gulp-remove-html');
 const inject = require('gulp-inject-string');
 
 const path = {
-  // baseUrl: process.env.PWD,
-  // src: process.env.PWD + '/src/',
-  // dist: process.env.PWD + '/dist/'
-  baseUrl: '..',
-  src: '../src/',
-  dist: '../dist/',
+   baseUrl: process.env.PWD,
+   src: process.env.PWD + '/src/',
+   dist: process.env.PWD + '/dist/',
+  //baseUrl: '..',
+  //src: '../src/',
+  //dist: '../dist/',
 
   sass: {
     outputStyle: 'compressed',
@@ -18,8 +18,8 @@ const path = {
 
   sources: {
     sass: [
-      // process.env.PWD + '/src/styles/main.scss'
-      '../src/styles/main.scss',
+       process.env.PWD + '/src/styles/main.scss'
+      //'../src/styles/main.scss',
     ],
   },
 };
