@@ -55,7 +55,6 @@ gulp.task('build:css', async function(done) {
   
 });
 
-
 gulp.task('build:fonts', (done) => {
   return gulp
     .src(`${path.src}assets/fonts/**/*`)
