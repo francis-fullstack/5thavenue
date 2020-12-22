@@ -38,7 +38,7 @@ const parallelTask = ['build:css', 'build:fonts'];
 
 require('./assets')(gulp, path);
 
-var sheets = [
+var files = [
   { src : `${path.src}styles/main.min.css`, dest : `${path.dist}styles/` },
   { src : `${path.src}styles/splash.css`, dest : `${path.dist}styles/` },
   { src : `${path.src}styles/adventura.css`, dest : `${path.dist}styles/` },
@@ -46,7 +46,7 @@ var sheets = [
 ];
 
 gulp.task('build:css', async function(done) {
-  await sheets.map(function(file) {
+  await files.map(function(file) {
     return gulp.src([
         file.src 
     ])

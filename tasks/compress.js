@@ -66,15 +66,26 @@ module.exports = (gulp, path) => {
 
   //   done()
   // })
+  var files = [
+    { src : `${path.src}*.html`, dest : `${path.dist}` },
+    { src : `${path.src}/5th-avenue/*.html`, dest : `${path.dist}5th-avenue/` },
+    { src : `${path.src}/adventura/*.html`, dest : `${path.dist}adventura/` }
+  ];
 
-  gulp.task('build:useref', function () {
+  gulp.task('build:useref', async function () {
     return (
-      gulp
-        .src(`${path.src}*.html`)
+
+      await files.map(function(file) {
+        return gulp.src([
+            file.src 
+        ])
         .pipe(useref())
         // .pipe(gulpIf('*.js', uglify()))
         .pipe(gulpIf('*.js', terser()))
-        .pipe(gulp.dest(`${path.dist}`))
+        .pipe( gulp.dest(file.dest) )
+        })
+
+
     );
   });
 
