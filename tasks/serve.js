@@ -20,9 +20,6 @@ module.exports = (gulp, path) => {
       .watch([path.baseUrl + '/src/**/*.html'])
       .on('all', gulp.series('assets:html', 'reload'));
     gulp
-      .watch([path.baseUrl + '/**/*.css'])
-      .on('all', gulp.series('assets:css', 'reload'));
-    gulp
       .watch([path.baseUrl + '/src/**/*.scss'])
       .on('all', gulp.series('assets:sass', 'reload'));
     gulp
