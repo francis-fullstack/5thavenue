@@ -70,7 +70,9 @@ a{
     overflow-y:auto !important;
     overflow-x: hidden  !important;
 }
-
+.adidas-logo{
+    width: 72%;
+}
 
 /* SCROLLBAR DESIGN */
 .sidebar-content::-webkit-scrollbar-track
