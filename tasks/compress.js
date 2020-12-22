@@ -17,40 +17,34 @@ module.exports = (gulp, path) => {
   const parallelTasks = ['build:image'];
   const seriesTasks = ['build:useref'];
 
-  var media = [
-    { src : `${path.src}assets/images/**/*`, dest : `${path.dist}assets/images/` },
-    { src : `${path.src}assets/videos/5thave/**/*.mp4`, dest :`${path.dist}assets/videos/5thAve/` },
-    { src : `${path.src}assets/videos/Adventura/**/*.mp4`, dest : `${path.dist}assets/videos/Adventura/`  },
-  ];
+  gulp.task('build:image', (done) => {
+    return gulp
+      .src(`${path.src}assets/images/**/*`)
+      .pipe(
+        imagemin([
+          // imageminPngquant({
+          //   speed: 1,
+          //   quality: 70
+          // }),
+          // imageminMozjpeg({
+          //   quality: 50
+          // }),
+          // imageminGiflossy({
+          //   optimizationLevel: 3,
+          //   optimize: 3, //keep-empty: Preserve empty transparent frames
+          //   lossy: 2
+          // }),
+          // imagemin.jpegtran({progressive: true}),
+          // imagemin.optipng({optimizationLevel: 7}),
+          imagemin.svgo({
+            plugins: [{removeViewBox: false}],
+          }),
+        ])
+      )
+      .pipe(gulp.dest(`${path.dist}assets/images/`));
 
-  gulp.task('build:image', async function(done) {
-    return (
-      await media.map(function(file) {
-        return gulp.src(file.src)
-        .pipe(
-          imagemin([
-            // imageminPngquant({
-            //   speed: 1,
-            //   quality: 70
-            // }),
-            // imageminMozjpeg({
-            //   quality: 50
-            // }),
-            // imageminGiflossy({
-            //   optimizationLevel: 3,
-            //   optimize: 3, //keep-empty: Preserve empty transparent frames
-            //   lossy: 2
-            // }),
-            // imagemin.jpegtran({progressive: true}),
-            // imagemin.optipng({optimizationLevel: 7}),
-            imagemin.svgo({
-              plugins: [{removeViewBox: false}],
-            }),
-          ])
-          .pipe(gulp.dest(file.dest))
-
-    )})
-  )});
+    done();
+  });
 
   // gulp.task('build:vendorsJS', done => {
   //   return gulp.src(vendorsJS)
@@ -80,6 +74,7 @@ module.exports = (gulp, path) => {
 
   gulp.task('build:useref', async function () {
     return (
+
       await files.map(function(file) {
         return gulp.src([
             file.src 
@@ -89,6 +84,8 @@ module.exports = (gulp, path) => {
         .pipe(gulpIf('*.js', terser()))
         .pipe( gulp.dest(file.dest) )
         })
+
+
     );
   });
 
