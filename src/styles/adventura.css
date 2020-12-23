@@ -77,7 +77,7 @@ a{
 /* SCROLLBAR DESIGN */
 .sidebar-content::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #F5F5F5;
 }
 
@@ -93,6 +93,9 @@ a{
 	border: 2px solid #555555;
 }
 @media only screen and (max-width: 600px) {
+    .nav-link{
+        font-size: 16px !important;
+    }
     #floater #submenu{
         font-size: 14px;
     }
@@ -101,6 +104,36 @@ a{
     .sub-item-sl{
         font-size: 14px;
         margin-left: 25px;
+    }
+    /* SUB MENU FOR SEMI TRANSPARENT*/
+    .sub-item-st{
+        font-size: 14px;
+        margin-left: 25px;
+    }
+    /* SUB MENU FOR LAYOUT 1*/
+    .sub-item-layout1{
+        font-size: 14px;
+        margin-left: 25px;
+    }
+
+    /* SUB MENU FOR LAYOUT 2*/
+    .sub-item-layout2{
+        font-size: 14px;
+        margin-left: 25px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .nav-link{
+        font-size: 16px !important;
+    }
+    #floater #submenu{
+        font-size: 14px;
+    }
+
+    /* SUB MENU FOR STANDARD LED*/
+    .sub-item-sl{
+        font-size: 14px;
+        margin-left: 30px;
     }
     /* SUB MENU FOR SEMI TRANSPARENT*/
     .sub-item-st{

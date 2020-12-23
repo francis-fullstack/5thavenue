@@ -57,18 +57,29 @@ a{
     font-size: 16px;
     padding: 16px 32px;
   }
-.adidaslogo{
-    width: 30%;
+  .logos > .row > .col-6 > .adidaslogo{
+    width: 250px;
+    height: 120px;
     padding-left: 90px;
 }
-
+@media only screen and (max-width: 325px) {
+    .logos > .row > .col-6 > .adidaslogo{
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .logos > .row > .col-6 > .adidaslogo{
+        width: 130px;
+        height: 90px;
+        padding-left: 0px;
+    }
+}
 @media only screen and (max-width: 600px) {
     .center {
         width: 100%;
     }
     .adidaslogo{
-        width: 120px;
-        height: 100px;
+        width:30%;
         padding-left: 0px;
     }
     .title-logo{
@@ -80,5 +91,46 @@ a{
     }   
     .p{
         font-size: 30px;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    .logos > .row > .col-6 > .adidaslogo{
+        max-width: 50%;
+    }
+}
+
+@media only screen and (width: 768px) {
+    .logos > .row > .col-6 > .adidaslogo{
+        width: 240px;
+        height: 140;
+    }
+}
+@media only screen and (width: 540) {
+    .logos > .row > .col-6 > .adidaslogo{
+        width: 120px;
+        height: 100px;
+        padding-left: 0px;
+    }
+}
+@media only screen and (width: 425px) {
+    .logos > .row > .col-6 > .adidaslogo{
+        width: 100px;
+        height: 100px;
+        padding-left: 0px;
+    }
+}
+@media only screen and (width: 414px) {
+    .logos > .row > .col-6 > .adidaslogo{
+        width: 120px;
+        height: 100px;
+        padding-left: 0px;
+    }
+}
+@media only screen and (width: 280px) {
+    .logos > .row > .col-6 > .adidaslogo{
+        width: 110px;
+        height: 90px;
+        padding-left: 0px;
     }
 }
